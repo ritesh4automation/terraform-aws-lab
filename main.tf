@@ -20,5 +20,6 @@ resource "aws_s3_bucket" "my_lab_bucket" {
   tags = {
     Name        = "My Lab Bucket"
     Environment = "Dev"
+    Version     = "1.0"  # <--- NEW LINE ADDED
   }
 }
