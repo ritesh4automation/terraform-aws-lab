@@ -14,7 +14,8 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "my_lab_bucket" {
-  bucket = "unique-bucket-name-12345"  # CHANGE THIS NAME
+  # Fix: Use lowercase, hyphens, and a random number
+  bucket = "terraform-lab-user-2025-x9z" 
 
   tags = {
     Name        = "My Lab Bucket"
